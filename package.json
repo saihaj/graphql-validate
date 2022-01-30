@@ -1,0 +1,26 @@
+{
+  "name": "validate-graphql",
+  "version": "0.1.0",
+  "description": "CLI tool to validate GraphQL operations against a schema.",
+  "bin": {
+    "validate-graphql": "bin/index.mjs"
+  },
+  "scripts": {
+    "start": "node src/index.mjs"
+  },
+  "author": "Saihajpreet Singh <saihajpreet.singh@gmail.com> (https://saihaj.dev/)",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/code-file-loader": "^7.2.3",
+    "@graphql-tools/graphql-file-loader": "^7.3.3",
+    "@graphql-tools/json-file-loader": "^7.3.3",
+    "@graphql-tools/load": "^7.5.1",
+    "@graphql-tools/url-loader": "^7.7.1",
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
