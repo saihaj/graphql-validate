@@ -1,0 +1,23 @@
+# `validate-operations`
+
+With the power of GraphQL-Tools and GraphQL-JS, we are able to provide a smooth experience for validation your GraphQL operations during development, or in CI.
+
+`validate-operations` is a simple CLI tools that helps you validate GraphQL operations against a given schema. To use it you can
+
+Usage:
+
+```bash
+Usage: validate-operations [options]
+
+CLI to validate GraphQL operations against a schema
+
+Options:
+  -V, --version                output the version number
+  -s, --schema <schema>        Path to the schema file or URL to fetch the schema from
+  -o, --operation <operation>  Path to the operation files (default: "**/*.graphql")
+  -h, --help                   display help for command
+```
+
+You can load schema from a [local file](https://www.graphql-tools.com/docs/schema-loading#graphql-file-loader) or a [remote url](https://www.graphql-tools.com/docs/schema-loading#url-loader).
+
+For operations it supports following extensions `[graphql](https://www.graphql-tools.com/docs/schema-loading#graphql-file-loader), [ts,js](https://www.graphql-tools.com/docs/schema-loading#code-file-loader)`

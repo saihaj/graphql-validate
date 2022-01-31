@@ -7,6 +7,7 @@ import { JsonFileLoader } from '@graphql-tools/json-file-loader'
 import { UrlLoader } from '@graphql-tools/url-loader'
 import { CodeFileLoader } from '@graphql-tools/code-file-loader'
 import chalk from 'chalk'
+import { version } from '../package.json'
 
 const log = console.log
 
@@ -55,7 +56,7 @@ const main = async () => {
   program
     .name('validate-operations')
     .description('CLI to validate GraphQL operations against a schema')
-    .version('0.0.1')
+    .version(version)
     .requiredOption(
       '-s, --schema <schema>',
       'Path to the schema file or URL to fetch the schema from',
