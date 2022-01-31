@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.7
+
+### Patch Changes
+
+- 9173324: update errors links
+
 ## 0.1.6
 
 ### Patch Changes
