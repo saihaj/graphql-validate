@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "type": "commonjs",
   "author": "Saihajpreet Singh <saihajpreet.singh@gmail.com> (https://saihaj.dev/)",
   "license": "MIT",
   "publishConfig": {
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "start": "node src/index.mjs",
-    "build": "rimraf dist && tsc && ncc build src/index.ts -o validate-graphql --minify",
+    "build": "rimraf dist && tsup src --format cjs",
     "prerelease": "npm run build",
     "release": "changeset publish"
   },
@@ -34,15 +35,15 @@
     "@graphql-tools/json-file-loader": "^7.3.3",
     "@graphql-tools/load": "^7.5.1",
     "@graphql-tools/url-loader": "^7.7.1",
-    "chalk": "^5.0.0",
+    "chalk": "4.1.2",
     "commander": "^9.0.0",
     "graphql": "^16.3.0"
   },
   "devDependencies": {
     "@changesets/cli": "^2.20.0",
-    "@vercel/ncc": "^0.33.1",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
+    "tsup": "^5.11.13",
     "typescript": "^4.5.5"
   }
 }
