@@ -4,7 +4,7 @@
   "description": "CLI tool to validate GraphQL operations against a schema.",
   "main": "dist/index.js",
   "bin": {
-    "validate-operations": "dist"
+    "validate-operations": "dist/index.js"
   },
   "files": [
     "dist"
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node src/index.mjs",
-    "build": "ncc build src/index.ts -o dist --minify",
+    "build": "rimraf dist && tsc && ncc build src/index.ts -o validate-graphql --minify",
     "prerelease": "npm run build",
     "release": "changeset publish"
   },
@@ -42,6 +42,7 @@
     "@changesets/cli": "^2.20.0",
     "@vercel/ncc": "^0.33.1",
     "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   }
 }
