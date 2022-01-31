@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.3
+
+### Patch Changes
+
+- 4f9e486: hopefully this works!
+
 ## 0.1.2
 
 ### Patch Changes
