@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.2
+
+### Patch Changes
+
+- a939334: fixing binary
+
 ## 0.1.1
 
 ### Patch Changes
