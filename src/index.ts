@@ -18,7 +18,7 @@ const program = new Command()
  * @param {string} schemaPath
  * @param {string} documentPath
  */
-const validateOperations = async (schemaPath, documentPath) => {
+const validateOperations = async (schemaPath: string, documentPath: string) => {
   // This allows us to load schema from a remote URL or from a local file
   const schema = await loadSchema(schemaPath, {
     loaders: [new UrlLoader(), new GraphQLFileLoader(), new JsonFileLoader()],
@@ -30,7 +30,7 @@ const validateOperations = async (schemaPath, documentPath) => {
   })
 
   documents.forEach((document) => {
-    const errors = validate(schema, document.document)
+    const errors = validate(schema, document.document!)
 
     if (errors.length <= 0) {
       log(
@@ -40,7 +40,7 @@ const validateOperations = async (schemaPath, documentPath) => {
     }
 
     errors.forEach((error) => {
-      error.locations.forEach((location) => {
+      error.locations!.forEach((location) => {
         const str = `${chalk.red(error.message)}
 ${chalk.yellow(document.location)}${chalk.yellow('#')}${chalk.yellow(
           location.line,
