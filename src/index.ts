@@ -9,6 +9,7 @@ import { UrlLoader } from '@graphql-tools/url-loader'
 import { CodeFileLoader } from '@graphql-tools/code-file-loader'
 import chalk from 'chalk'
 import { version } from '../package.json'
+import terminalLink from 'terminal-link'
 
 
 const GRAPHQL_ERROR_GUIDE_LINKS_MAP: [rule_message_regex: RegExp, link: string][] = [
@@ -62,7 +63,7 @@ const logError = (document: Source, location: SourceLocation, error: GraphQLErro
   ${chalk.yellow(document.location)}${chalk.yellow('#')}${chalk.yellow(
     location.line,
   )}:${chalk.yellow(location.column)}
-  ${errorGuideLink ? `\n More information at ${errorGuideLink[1]}` : ''}
+  ${errorGuideLink ? `\n More information at ${terminalLink(errorGuideLink[1], errorGuideLink[1], { fallback: false })}` : ''}
           `
 
   log(str)

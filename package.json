@@ -37,7 +37,8 @@
     "@graphql-tools/url-loader": "^7.7.1",
     "chalk": "4.1.2",
     "commander": "^9.0.0",
-    "graphql": "^16.3.0"
+    "graphql": "^16.3.0",
+    "terminal-link": "^2.1.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.20.0",
