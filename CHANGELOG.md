@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.6
+
+### Patch Changes
+
+- f3b59a0: Add migration guide links to errors
+
 ## 0.1.5
 
 ### Patch Changes
