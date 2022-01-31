@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.4
+
+### Patch Changes
+
+- 3c51e2f: add system call to run
+
 ## 0.1.3
 
 ### Patch Changes
