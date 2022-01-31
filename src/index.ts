@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Command } from 'commander'
 import { validate } from 'graphql'
 import { loadDocuments, loadSchema } from '@graphql-tools/load'
