@@ -1,10 +1,10 @@
 {
-  "name": "validate-graphql",
+  "name": "validate-operations",
   "version": "0.1.0",
   "description": "CLI tool to validate GraphQL operations against a schema.",
   "main": "dist/index.js",
   "bin": {
-    "validate-graphql": "dist/index.js"
+    "validate-operations": "dist/index.js"
   },
   "files": [
     "dist"
@@ -14,13 +14,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/saihaj/validate-graphql",
+  "homepage": "https://github.com/saihaj/validate-operations",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saihaj/validate-graphql"
+    "url": "git+https://github.com/saihaj/validate-operations"
   },
   "bugs": {
-    "url": "https://github.com/saihaj/validate-graphql/issues"
+    "url": "https://github.com/saihaj/validate-operations/issues"
   },
   "scripts": {
     "start": "node src/index.mjs",

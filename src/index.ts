@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-// @ts-check
 import { Command } from 'commander'
 import { validate } from 'graphql'
 import { loadDocuments, loadSchema } from '@graphql-tools/load'
@@ -54,7 +52,7 @@ ${chalk.yellow(document.location)}${chalk.yellow('#')}${chalk.yellow(
 
 const main = async () => {
   program
-    .name('validate-graphql')
+    .name('validate-operations')
     .description('CLI to validate GraphQL operations against a schema')
     .version('0.0.1')
     .requiredOption(
