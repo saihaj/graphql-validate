@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.5
+
+### Patch Changes
+
+- 03e6ab0: add version info and some docs
+
 ## 0.1.4
 
 ### Patch Changes
