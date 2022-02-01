@@ -17,13 +17,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/saihaj/validate-operations",
+  "homepage": "https://github.com/saihaj/graphql-validate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saihaj/validate-operations"
+    "url": "git+https://github.com/saihaj/graphql-validate"
   },
   "bugs": {
-    "url": "https://github.com/saihaj/validate-operations/issues"
+    "url": "https://github.com/saihaj/graphql-validate/issues"
   },
   "scripts": {
     "start": "node src/index.mjs",

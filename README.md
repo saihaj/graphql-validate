@@ -1,13 +1,13 @@
-# `validate-operations`
+# `@graphql-validate`
 
 With the power of GraphQL-Tools and GraphQL-JS, we are able to provide a smooth experience for validation your GraphQL operations during development, or in CI.
 
-`validate-operations` is a simple CLI tools that helps you validate GraphQL operations against a given schema. To use it you can
+`@graphql-validate/cli` is a simple CLI tools that helps you validate GraphQL operations against a given schema. To use it you can
 
 Usage:
 
 ```bash
-Usage: validate-operations [options]
+Usage: @graphql-validate/cli [options]
 
 CLI to validate GraphQL operations against a schema
 
