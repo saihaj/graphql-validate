@@ -1,9 +1,11 @@
 {
-  "name": "validate-operations",
-  "version": "0.1.7",
+  "name": "@graphql-validate/cli",
+  "version": "0.0.0",
   "description": "CLI tool to validate GraphQL operations against a schema.",
   "main": "dist/index.js",
   "bin": {
+    "@graphql-validate": "dist/index.js",
+    "gql-validate": "dist/index.js",
     "validate-operations": "dist/index.js"
   },
   "files": [
