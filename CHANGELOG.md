@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.0.1
+
+### Patch Changes
+
+- 1b16d5e: setup new name
+
 ## 0.1.7
 
 ### Patch Changes
