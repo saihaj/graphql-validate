@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.1.0
+
+### Minor Changes
+
+- 3096798: update docs
+
 ## 0.0.1
 
 ### Patch Changes
