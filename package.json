@@ -1,6 +1,6 @@
 {
   "name": "@graphql-validate/cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI tool to validate GraphQL operations against a schema.",
   "main": "dist/index.js",
   "bin": {
@@ -26,10 +26,11 @@
     "url": "https://github.com/saihaj/graphql-validate/issues"
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsx src/index.ts",
     "build": "rimraf dist && tsup src --format cjs",
     "prerelease": "npm run build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "changeset": "changeset"
   },
   "dependencies": {
     "@graphql-tools/code-file-loader": "^8.1.2",
@@ -46,7 +47,7 @@
     "@changesets/cli": "^2.20.0",
     "prettier": "^3.3.2",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
