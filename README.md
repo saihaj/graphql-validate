@@ -12,10 +12,11 @@ Usage: @graphql-validate/cli [options]
 CLI to validate GraphQL operations against a schema
 
 Options:
-  -V, --version                output the version number
-  -s, --schema <schema>        Path to the schema file or URL to fetch the schema from
-  -o, --operation <operation>  Path to the operation files (default: "**/*.graphql")
-  -h, --help                   display help for command
+  -V, --version                        output the version number
+  -s, --schema <schema>                Path to the schema file or URL to fetch the schema from
+  -o, --operation <operation>          Path to the operation files (default: "**/*.graphql")
+  -r, --rules <Rule1,Rule2,...,RuleN>  The list of rules to apply for the validation
+  -h, --help                           display help for command
 ```
 
 You can load schema from a [local file](https://www.graphql-tools.com/docs/schema-loading#graphql-file-loader) or a [remote url](https://www.graphql-tools.com/docs/schema-loading#url-loader).
