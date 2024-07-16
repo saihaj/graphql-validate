@@ -1,5 +1,11 @@
 # validate-graphql
 
+## 0.2.0
+
+### Minor Changes
+
+- 453a13f: Add -r/--rules option support
+
 ## 0.1.0
 
 ### Minor Changes
