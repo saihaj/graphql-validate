@@ -26,27 +26,29 @@
     "url": "https://github.com/saihaj/graphql-validate/issues"
   },
   "scripts": {
-    "start": "node src/index.mjs",
+    "start": "tsx src/index.ts",
     "build": "rimraf dist && tsup src --format cjs",
     "prerelease": "npm run build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "changeset": "changeset"
   },
   "dependencies": {
-    "@graphql-tools/code-file-loader": "^7.2.3",
-    "@graphql-tools/graphql-file-loader": "^7.3.3",
-    "@graphql-tools/json-file-loader": "^7.3.3",
-    "@graphql-tools/load": "^7.5.1",
-    "@graphql-tools/url-loader": "^7.7.1",
+    "@graphql-tools/code-file-loader": "^8.1.2",
+    "@graphql-tools/graphql-file-loader": "^8.0.1",
+    "@graphql-tools/json-file-loader": "^8.0.1",
+    "@graphql-tools/load": "^8.0.2",
+    "@graphql-tools/url-loader": "^8.0.2",
     "chalk": "4.1.2",
     "commander": "^9.0.0",
-    "graphql": "^16.3.0",
+    "graphql": "^16.9.0",
     "terminal-link": "^2.1.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.20.0",
-    "prettier": "^2.5.1",
+    "prettier": "^3.3.2",
     "rimraf": "^3.0.2",
-    "tsup": "^5.11.13",
-    "typescript": "^4.5.5"
+    "tsx": "^4.16.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
   }
 }
